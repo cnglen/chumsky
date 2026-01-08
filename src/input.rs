@@ -1704,6 +1704,7 @@ impl<'src, 'parse, I: Input<'src>, E: ParserExtra<'src, I>> InputRef<'src, 'pars
         let _ = self.next_inner();
     }
 
+    /// Full slice of raw input
     #[cfg_attr(not(feature = "regex"), allow(dead_code))]
     #[inline]
     pub fn full_slice(&mut self) -> I::Slice
