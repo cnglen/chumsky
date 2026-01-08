@@ -1706,7 +1706,7 @@ impl<'src, 'parse, I: Input<'src>, E: ParserExtra<'src, I>> InputRef<'src, 'pars
 
     #[cfg_attr(not(feature = "regex"), allow(dead_code))]
     #[inline]
-    pub(crate) fn full_slice(&mut self) -> I::Slice
+    pub fn full_slice(&mut self) -> I::Slice
     where
         I: SliceInput<'src>,
     {
